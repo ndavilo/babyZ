@@ -45,6 +45,7 @@ div{
 }
 .bottom{
     background-color: #FFF9CA;
+    padding: 2% 2% 2% 4.65%
 }
 h1{
     color: red;
@@ -212,12 +213,6 @@ h5{
 .social-media .instagram:hover .application,
 .social-media .instagram:hover .application::before{
     background: red;
-    color: #ffffff;
-}
-.social-media .telegram:hover,
-.social-media .telegram:hover .application,
-.social-media .telegram:hover .application::before {
-    background: rgb(136, 214, 126);
     color: #ffffff;
 }
 .social-media .youtube:hover,

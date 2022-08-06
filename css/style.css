@@ -26,61 +26,19 @@ div{
     width: 300px;
     border: solid;
     border-width: 12px;
-    border-color: #FFF9CA;
+    border-color: #ee9d9d;
 }
 h1{
-    margin-top: 5%;
-    font-family: 'Sacramento', cursive;
     color: red;
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 10%;
 }
 h5{
     display: flex;
-    padding: auto 10px auto 10px;
-    margin: auto 20px auto 20px;
-}
-.img2, .img3, .img4, .img5, .img6{
-    width: 15%;
-    height: 20%;
-    border-radius: 50%;
-    border: solid;
-    border-width: 1%;
-    border-color: #FFF9CA;
-}
-.img4{
-    bottom: 9%;
-    left: 45%;
-    position: absolute;
-}
-.img3{
-    bottom: 9%;
-    left: 35%;
-    position: absolute;
-}
-.img2{
-    bottom: 9%;
-    left: 25%;
-    position: absolute;
-}
-.img5{
-    bottom: 9%;
-    left: 55%;
-    position: absolute;
-}
-.img6{
-    bottom: 9%;
-    left: 65%;
-    position: absolute;
-}
-
-.img6:hover,
-.img5:hover,
-.img4:hover,
-.img3:hover, 
-.img2:hover{
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    z-index: 1;
+    font-size: 1.2rem;
+    margin: 40px;
 }
 .gallery{
     --s: 100px;
@@ -101,11 +59,51 @@ h5{
     min-width: 100%;
     object-fit: cover;
     cursor: pointer;
-    filter: grayscale(80%);
+    filter: grayscale(50%);
     transition: 0.35s linear;
 }
 .gallery img:hover{
     filter: grayscale(0);
     width: calc(var(--s) * var(--f));
     height: calc(var(--s) * var(--f));
+}
+
+.main_gallery{
+    justify-content: center;
+    --t: 150px;
+    --h: 8px;
+    display: grid;
+    gap: var(--h);
+    height: 300px;
+    margin-bottom: 0;
+    grid: auto-flow var(--t)/repeat(2,var(--t));
+}
+.main_gallery > img{
+    width: 100%;
+    aspect-ratio: 1;
+    cursor: pointer;
+    z-index: 0;
+    transition: 0.25s, z-index 0s 0.25s;
+}
+.main_gallery img:hover{
+    width: calc(200% + var(--h));
+    z-index: 1;
+    --_c: 50%;
+    transition: .4s,z-index 0s;
+}
+.main_gallery > img:nth-child(1){
+    clip-path: circle(var(--_c,55% at 70% 70%));
+    place-self: start;
+}
+.main_gallery > img:nth-child(2){
+    clip-path: circle(var(--_c,55% at 30% 70%));
+    place-self: start end;
+}
+.main_gallery > img:nth-child(3){
+    clip-path: circle(var(--_c,55% at 70% 30%));
+    place-self: end start;
+}
+.main_gallery > img:nth-child(4){
+    clip-path: circle(var(--_c,55% at 30% 30%));
+    place-self: end;
 }

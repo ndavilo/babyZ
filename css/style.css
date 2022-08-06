@@ -20,25 +20,16 @@ div{
 .bottom{
     background-color: #FFF9CA;
 }
-.img{
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
-    border: solid;
-    border-width: 12px;
-    border-color: #ee9d9d;
-}
 h1{
     color: red;
     font-family: 'Sacramento', cursive;
     font-size: 3rem;
     font-weight: bold;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 h5{
-    display: flex;
     font-size: 1.2rem;
-    margin: 40px;
+    margin: 20px;
 }
 .gallery{
     --s: 100px;

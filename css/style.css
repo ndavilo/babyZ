@@ -1,6 +1,111 @@
 body{
     margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 div{
-    width: 100px;
+    width: 100%;
+    height: 800px;
+    display: Inline-Block;
+}
+.top{
+    position: relative;
+    background-color: #FFB4B4;
+}
+.middle{
+    background-color: #FFDEB4;
+    height: 850px;
+}
+.bottom{
+    background-color: #FFF9CA;
+}
+.img{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border: solid;
+    border-width: 12px;
+    border-color: #FFF9CA;
+}
+h1{
+    margin-top: 5%;
+    font-family: 'Sacramento', cursive;
+    color: red;
+}
+h5{
+    display: flex;
+    padding: auto 10px auto 10px;
+    margin: auto 20px auto 20px;
+}
+.img2, .img3, .img4, .img5, .img6{
+    width: 15%;
+    height: 20%;
+    border-radius: 50%;
+    border: solid;
+    border-width: 1%;
+    border-color: #FFF9CA;
+}
+.img4{
+    bottom: 9%;
+    left: 45%;
+    position: absolute;
+}
+.img3{
+    bottom: 9%;
+    left: 35%;
+    position: absolute;
+}
+.img2{
+    bottom: 9%;
+    left: 25%;
+    position: absolute;
+}
+.img5{
+    bottom: 9%;
+    left: 55%;
+    position: absolute;
+}
+.img6{
+    bottom: 9%;
+    left: 65%;
+    position: absolute;
+}
+
+.img6:hover,
+.img5:hover,
+.img4:hover,
+.img3:hover, 
+.img2:hover{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+}
+.gallery{
+    --s: 100px;
+    --g: 10px;
+    --f: 1.5;
+    display: grid;
+    gap: var(--g);
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3, auto);
+}
+.gallery > img{
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: 0.35s linear;
+}
+.gallery img:hover{
+    filter: grayscale(0);
+    width: calc(var(--s) * var(--f));
+    height: calc(var(--s) * var(--f));
 }

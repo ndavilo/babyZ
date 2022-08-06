@@ -3,11 +3,37 @@ body{
     padding: 0;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    background-color: #FFF9CA;
 }
 div{
     width: 100%;
     height: 800px;
     display: Inline-Block;
+}
+.main_div{
+    width: 80%;
+    float: left;
+}
+.side_div{
+    background-color: #FFB4B4;
+    position: fixed;
+    right: 0.5%;
+    top: 0.5%;
+    width: 19%;
+    height: 91.3%;
+    float: right;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+@media screen and (max-width: 900px){
+    .side_div{
+        position: relative;
+        width: 100%;
+    }
+    .main_div{
+        width: 100%;
+        float: none;
+    }
 }
 .top{
     position: relative;
@@ -107,10 +133,11 @@ h5{
     position: fixed;
     bottom: 0;
     right: 0;
-    background: linear-gradient(180deg, #FFB4B4, #FFDEB4, #FFF9CA);;
+    background: linear-gradient(180deg, #FFB4B4, #FFDEB4, #FFF9CA);
     width: 100%;
     justify-content: center;
     margin-bottom: 0;
+    z-index: 1;
 }
 .social-media .icon{
     position: relative;

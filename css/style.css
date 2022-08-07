@@ -292,3 +292,32 @@ h5{
 .services, .services span { background: #AFB4FF; }
 .portfolio, .portfolio span { background: #B1E1FF; }
 .contact, .contact span { background: #d8acac; }
+
+.card{
+    background: linear-gradient(180deg, #FFB4B4, #FFDEB4, #FFF9CA);
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    padding: 1%;
+}
+.card img{
+    border-radius: 10px;
+    height: 600px;
+}
+.card img:hover{
+    animation: shake 1s forwards;
+}
+    
+@keyframes shake {
+    10%{
+    transform: rotate(5deg);
+    }
+    20%{
+    transform: rotate(-5deg);
+    }
+    30%{
+    transform: rotate(5deg);
+    }
+    50%{
+    transform: rotate(0deg);
+    }
+}

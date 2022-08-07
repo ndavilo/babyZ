@@ -69,7 +69,7 @@ div{
     padding: 2% 2% 2% 4.65%
 }
 .logo-name{
-    color: red;
+    color: rgb(122, 21, 21);
     font-family: 'Sacramento', cursive;
     font-size: 3rem;
     font-weight: bold;
@@ -305,7 +305,7 @@ div{
     height: 40px;
     display: block;
     text-decoration: none;
-    color: #fff;
+    color: rgb(99, 16, 16);
     position: relative;
 }
 .list-item a:hover span {
